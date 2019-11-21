@@ -1,0 +1,1 @@
+zip -ry TPExec.zip TableauProver/TPExe -x *.proof 

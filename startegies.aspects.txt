@@ -1,0 +1,5 @@
+Tseitin startegy aspect
+
+addRight -> ignore
+isClosed - do not see right
+
