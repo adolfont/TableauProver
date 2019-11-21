@@ -1,0 +1,1 @@
+ln -sf ../../problems/output/wagnerNew/tex/*.tex .

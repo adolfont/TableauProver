@@ -1,0 +1,2 @@
+ln -sf  /home/adolfo/TableauProver/extlib extlib
+ln -sf  /home/adolfo/TableauProver/lib lib

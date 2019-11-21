@@ -1,0 +1,6 @@
+c Teste do SAT
+c
+c Adolfo Gustavo 2004
+p cnf 4 3
+1 -1 2 3 0
+

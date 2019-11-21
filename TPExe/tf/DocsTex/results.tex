@@ -1,0 +1,123 @@
+\documentclass[a4]{article}
+
+\addtolength{\oddsidemargin}{-30mm}
+\addtolength{\textwidth}{60mm}
+\addtolength{\topmargin}{-10mm}
+\addtolength{\textheight}{20mm}
+
+\usepackage[latin1]{inputenc}
+%\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%\input{mfcommands}
+
+\newcommand{\barra}{\\}
+\newcommand{\impli}{\to}
+\newcommand{\pipe}{\,\,|\,}
+\newcommand{\com}[1]{}
+%\newcommand{\com}[1]{{\em \small}}
+\newcommand{\comm}[1]{{\bf }}
+
+%\linespread{2}
+
+
+\begin{document}
+
+\newenvironment{ctabular}
+		{\begin{center}\begin{tabular}}
+		{\end{tabular}\end{center}}
+
+\section{Test results}
+\label{tests}
+
+
+
+\subsection{$\Gamma$ formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{gamma_normal_results.tex}
+\end{ctabular}
+
+
+\subsection{$\Gamma$ clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{gamma_clausal_results.tex}
+\end{ctabular}
+
+\subsection{$\Gamma$ formulas with literals}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{gamma_with_literals_results.tex}
+\end{ctabular}
+
+\subsection{$\Gamma$ clausal formulas with literals}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{gamma_clausal_with_literals_results.tex}
+\end{ctabular}
+
+\subsection{$H$ formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{h_normal_results.tex}
+\end{ctabular}
+
+\subsection{$H$ clausal formulas}
+
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{h_clausal_results.tex}
+\end{ctabular}
+
+
+\subsection{PHP formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{php_normal_results.tex}
+\end{ctabular}
+
+
+\subsection{PHP clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{php_clausal_results.tex}
+\end{ctabular}
+
+
+
+\subsection{Statman formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{statman_normal_results.tex}
+\end{ctabular}
+
+
+\subsection{Statman clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|c|c|c|c|c|} \hline
+size & proof length (in characters) & time(s) & nodes & height & formula complexity & signed formula complexity  \\ \hline
+\input{statman_clausal_results.tex}
+\end{ctabular}
+
+
+
+
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

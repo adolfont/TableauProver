@@ -1,0 +1,5 @@
+Após bin/createXMLforWagner.sh:
+bin/TP.sh SATLIBS wagner phpn2
+
+Após createXMLforSATLIB.sh teste.sat (vai criar teste.sat.xml)
+bin/TP.sh SATLIBH samples teste.sat

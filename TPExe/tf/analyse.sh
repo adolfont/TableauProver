@@ -1,0 +1,1 @@
+java -DSFCreatorLibDir=../lib/ -DproblemsInputDir=../problems/input/wagnerNew/ -DproblemsOutputDir=../problems/output/wagnerNew/ -DanalyserName=sats3 -jar tf.jar analyseProblemSequence $1 $2 $3 $4 $5 $6 ../problems/output/wagnerNew/tex/$1_$6_analysis.tex

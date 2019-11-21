@@ -1,0 +1,5 @@
+T (!s)->(euCuido|voceNaoVai)
+T (s|euCuido)->NoaraVaiComerPapinha
+T voceNaoVai->NoaraMama
+T !s
+F NoaraVaiComerPapinha|NoaraMama

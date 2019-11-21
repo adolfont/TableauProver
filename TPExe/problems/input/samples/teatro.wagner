@@ -1,0 +1,7 @@
+T (chuva|(!grana))->(!teatro)
+T (grana&boaPeca&tempo)->teatro
+T chuva->levarGuardaChuva
+T grana
+T tempo&boaPeca
+T chuva
+F teatro&levarGuardaChuva

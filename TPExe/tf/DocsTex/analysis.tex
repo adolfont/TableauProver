@@ -1,0 +1,137 @@
+\documentclass{article}
+
+\addtolength{\oddsidemargin}{-30mm}
+\addtolength{\textwidth}{60mm}
+\addtolength{\topmargin}{-10mm}
+\addtolength{\textheight}{20mm}
+
+\usepackage[latin1]{inputenc}
+%\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%\input{mfcommands}
+
+\newcommand{\barra}{\\}
+\newcommand{\impli}{\to}
+\newcommand{\pipe}{\,\,|\,}
+\newcommand{\com}[1]{}
+%\newcommand{\com}[1]{{\em \small}}
+\newcommand{\comm}[1]{{\bf }}
+
+%\linespread{2}
+
+
+\begin{document}
+
+\newenvironment{ctabular}
+		{\begin{center}\begin{tabular}}
+		{\end{tabular}\end{center}}
+
+\section{Results of the analysis of complexity of problems}
+
+Notice that some results can be calculated\ldots
+
+Gamma with literalas is easier because it has the same formulas and
+connectives and some more formulas\ldots
+\label{tests}
+
+
+
+\subsection{$\Gamma$ formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{gamma_normal_analysis.tex}
+\end{ctabular}
+
+
+\subsection{$\Gamma$ clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{gamma_clausal_analysis.tex}
+\end{ctabular}
+
+\subsection{$\Gamma$ formulas with 10 literals}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{gamma_with_literals_analysis.tex}
+\end{ctabular}
+
+\subsection{$\Gamma$ clausal formulas with 10 literals}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{gamma_clausal_with_literals_analysis.tex}
+\end{ctabular}
+
+\subsection{$H$ formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{h_normal_analysis.tex}
+\end{ctabular}
+
+\subsection{$H$ clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{h_clausal_analysis.tex}
+\end{ctabular}
+
+
+\subsection{PHP formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{php_normal_analysis.tex}
+\end{ctabular}
+
+
+\subsection{PHP clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{php_clausal_analysis.tex}
+\end{ctabular}
+
+
+
+\subsection{Statman formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{statman_normal_analysis.tex}
+\end{ctabular}
+
+
+\subsection{Statman clausal formulas}
+
+\begin{ctabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
+size & file size (in bytes) & number of atomic formulas & number of composite formulas & number of connectives & formula factory complexity &
+number of signed formulas & signed formula factory complexity  \\ \hline
+\input{statman_clausal_analysis.tex}
+\end{ctabular}
+
+
+
+
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
